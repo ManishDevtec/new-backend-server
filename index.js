@@ -3,19 +3,16 @@ const cors = require('cors');
 require('dotenv').config();
 const app = express();
 const connectDB = require("./db/connect")
-// const homerouter = require('./routes/homeroute');
 const shubhkamnarouter = require('./routes/Shubhkamna');
 const signuprouter = require('./routes/signup');
 const Loginrouter = require('./routes/login');
 const Toplinksrouter = require('./routes/toplinks');
 const Badikhabarrouter = require('./routes/badikhabar');
 const Taglineroute = require('./routes/Tagline');
-// const ApradhJagatrouter = require('./routes/Apradhjagat');
 const BlogRouter = require('./routes/Blog');
 const categoriesRouter = require('./routes/Category');
 const HomeDisplayRouter = require('./routes/HomeDisplay');
 
-// const multer = require('multer');
 const RajiyoRouter = require('./routes/Rajiya');
 const VotPollRouter = require('./routes/votpoll');
 const {RashifalRouter, JyotishRouter} = require('./routes/Rashifal');
@@ -26,7 +23,6 @@ const AddressRouter = require('./routes/Address');
 const RulesRouter = require('./routes/Rules');
 const FounderRouter = require('./routes/Founder');
 
-// const ServiceRouter = require('./routes/serviceroute');
 const PORT = process.env.PORT || 5000;
 const host = process.env.HOST || 'localhost';
 
